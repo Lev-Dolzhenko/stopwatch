@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(56, 56, 126);
+    
+    font-family: 'Roboto', sans-serif;
+    color: rgb(226, 169, 63);
+}
+
+.container--default {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.none {
+    display: none;
+}
+
+.container--stopwatch { 
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    button {
+        padding: 10px;
+        border: 1px solid rgb(226, 169, 63);
+        border-radius: 5px;
+
+        transition: color 0.2s linear;
+        transition: background-color 0.2s linear;
+
+        &:hover {
+            background-color: rgb(226, 169, 63);
+            color: #000;
+        }
+    }
+
+    ul {
+        height: 50px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+}
