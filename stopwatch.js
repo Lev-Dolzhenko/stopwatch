@@ -20,6 +20,8 @@ let intervalSeconds = 0;
 let intervalMinutes = 0;
 let intervalHours = 0;
 
+let circleCounter = 0;
+
 let pausedTimeInterval
 
 function updateTime() {
@@ -75,8 +77,9 @@ buttonSave.addEventListener('click', function () {
     tempInterval = setInterval(updateTimeInterval, 10);
     saveList.innerHTML +=
         `
-    <li>${timerField.textContent}, ${timerFieldInterval.textContent}</li>
+    <li>${timerField.textContent} | Круг ${circleCounter}: ${timerFieldInterval.textContent}</li>
     `
+    circleCounter++;
     intervalmilSeconds = 0;
     intervalSeconds = 0;
     intervalMinutes = 0;
